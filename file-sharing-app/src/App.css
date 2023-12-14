@@ -1,0 +1,54 @@
+.main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px;
+    text-align: center;
+  }
+  
+  .headings {
+    margin-bottom: 50px;
+  }
+  
+  .headings h2 {
+    font-size: 70px;
+    margin-bottom: 10px;
+  }
+  
+  .headings h3 {
+    font-size: 30px;
+    color: #555;
+  }
+  
+  #uploadBtn {
+    background-color: #4CAF50;
+    width: 200px;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 25px;
+    margin-bottom: 30px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .linksection {
+    background-color: #f4f4f4;
+    padding: 30px;
+    border-radius: 8px;
+    cursor: pointer;
+    text-decoration: underline;
+    /* color: blue; */
+  }
+  
+  .linksection a {
+    /* cursor: pointer; */
+    display: block;
+    margin-top: 20px;
+    color: #0366d6;
+    text-decoration: none;
+    word-break: break-all;
+  }
+  
