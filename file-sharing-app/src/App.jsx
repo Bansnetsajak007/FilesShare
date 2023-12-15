@@ -1,4 +1,4 @@
-//mero jati pani comonents haru hunxa tyo sabai lai mailey yo app.jsx ma register garaunu parxa
+//(normally react ma)mero jati pani comonents haru hunxa tyo sabai lai mailey yo app.jsx ma register garaunu parxa
 //normal project flow ma hunxa testo
 
 import React, { useEffect, useRef, useState } from 'react'

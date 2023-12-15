@@ -6,10 +6,7 @@ import dotenv from 'dotenv';
 dotenv.config();
 
 const DBconncetion = async () => {
-    const USERNAME = process.env.DB_USERNAME;
-    const PASSWORD = process.env.DB_PASSWORD;
-
-    const MONGO_URI = `mongodb+srv://${USERNAME}:${PASSWORD}@filesharingapp.liax0du.mongodb.net/?retryWrites=true&w=majority`;
+    const MONGO_URI = process.env.MONGO_URI
     try {
         //conncet database
         await mongoose.connect(MONGO_URI);;
