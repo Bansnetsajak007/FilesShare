@@ -2,7 +2,8 @@
 
 import axios from 'axios';
 
-const API_URL = 'http://localhost:4000';
+// const API_URL = 'http://localhost:4000';
+const API_URL = 'https://fileshare-8j7r.onrender.com';
 
 export const uplodeFile = async (data) => {
     try {
