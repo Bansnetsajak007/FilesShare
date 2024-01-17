@@ -1,3 +1,3 @@
 Simple file sharing application 
 
-# This application doesn't works as ther's some issue with deployment 
+# Main Aim of this app is to share files across the web easily without any complexity
