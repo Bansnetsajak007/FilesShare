@@ -35,7 +35,7 @@ useEffect(() => {
         if (downloadcode && codefromDatabase) {
             const response = await downloadFile(downloadcode, codefromDatabase);
             const { _id } =  response;
-            const downloadUrl = `http://localhost:4000/file/${_id}`;
+            const downloadUrl = `https://fileshare-5n8b.onrender.com/file/${_id}`;
 
             const link = document.createElement('a');
 
