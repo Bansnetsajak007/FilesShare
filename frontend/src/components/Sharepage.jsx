@@ -2,8 +2,9 @@
 //normal project flow ma hunxa testo
 
 import React, { useEffect, useRef, useState } from 'react'
-import './App.css';
-import { uplodeFile } from './services/api';
+import '../styles/Share.css'
+import { Navbar } from './Navbar'
+import { uplodeFile } from '../services/api';
 
 
 export const App = () => {
@@ -27,7 +28,7 @@ export const App = () => {
         hence the uplode file will do that
         */
         const response = await uplodeFile(data);
-        setresult(response.data.path);
+        setresult(response.data.code);
         
       }
     }
@@ -39,6 +40,9 @@ export const App = () => {
     fileInput.current.click();
   }
   return (
+    <>
+    <Navbar/>
+
     <div className='main'>
       <div className="headings">
       <h2>Share Files</h2>
@@ -54,9 +58,11 @@ export const App = () => {
       <div className="linksection">
         {/* when server sent a link after uploding a file (link goes here) */}
         {/* https://youtu.be/gwVEJqXixGs (included just for testing) */}
-        <a href={result} target='_blank'>{result}</a> 
+        {/* <a href={result} target='_blank'>{result}</a>  */}
+        <p>{result}</p>
       </div>
     </div>
+</>
   )
 }
 

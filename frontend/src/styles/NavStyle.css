@@ -1,0 +1,31 @@
+.nav-link {
+    font-size: 30px;
+    padding: 20px;
+    text-decoration: none;
+    cursor: pointer;
+    color: #ffff;
+    transition: transform 0.2s ease, filter 0.2s ease;
+    margin: 0 5px;
+  }
+  
+  .nav-link-green {
+    background-color: #2ecc71;
+  }
+  
+  .nav-link-blue {
+    background-color: #3498db;
+  }
+  
+  .nav-container {
+    display: flex;
+    justify-content: center; 
+    margin-top: 20px;
+  }
+  
+  .nav-link:active {
+    transform: scale(0.9); 
+  }
+  
+  .nav-link:active {
+    filter: brightness(1.2); 
+  }

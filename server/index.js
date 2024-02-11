@@ -5,6 +5,7 @@ import router from './routes/router.js';
 import cors from 'cors';
 import DBconncetion from './database/dbConfig.js';
 import dotenv from 'dotenv';
+import File from './models/file.js';
 
 dotenv.config();
 
@@ -16,11 +17,6 @@ app.use(express.json());
 const PORT = process.env.PORT;
 
 app.use('/', router);
-
-// DBconncetion();
-// app.listen(PORT, () => {
-//     console.log(`Server running at port ${PORT}`);
-// });
 
 DBconncetion().then(() => {
     app.listen(PORT, () => {

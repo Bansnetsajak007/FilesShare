@@ -1,0 +1,52 @@
+/* Define styles for the main container */
+.main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px;
+    text-align: center;
+  }
+  
+  /* Style for the headings container */
+  .headings {
+    margin-bottom: 50px;
+  }
+  
+  /* Style for the heading h2 */
+  .headings h2 {
+    font-size: 70px;
+    margin-bottom: 10px;
+  }
+  
+  /* Style for the heading h3 */
+  .headings h3 {
+    font-size: 30px;
+    color: #555;
+  }
+  
+  /* Style for the upload button */
+  #Download {
+    background-color: #4CAF50;
+    width: 200px;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 25px;
+    margin-bottom: 30px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+
+  #inputbox {
+    width: calc(100% - 60px); /* Adjust the width to fit nicely with the button */
+    padding: 10px; /* Add padding for better appearance */
+    font-size: 20px; /* Adjust font size for better readability */
+    margin-bottom: 25px;
+    border: 2px solid black;
+  }
+
+  
+
+  

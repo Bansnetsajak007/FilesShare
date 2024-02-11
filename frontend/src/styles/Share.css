@@ -43,12 +43,10 @@
     /* color: blue; */
   }
   
-  .linksection a {
-    /* cursor: pointer; */
+  .linksection p{
+    font-size: 38px;
     display: block;
     margin-top: 20px;
-    color: #0366d6;
-    text-decoration: none;
-    word-break: break-all;
+    color: black;
   }
   
