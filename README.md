@@ -18,36 +18,10 @@ The primary aim of this application is to provide a user-friendly platform for e
 4. **Responsive Design**
     - A responsive design that adapts to various devices, ensuring a consistent and enjoyable user experience whether on a desktop, tablet, or mobile device.
 
-5. **Shareable Links**
-    - Generate shareable links for files, allowing users to easily distribute and collaborate on shared content without the need for complicated account setups.
-
 6. **Robust File Management**
     - Include features for users to manage their shared files effectively, with options for organizing, deleting, and tracking file activities.
 
-## Future Enhancements
 
-Our commitment to continuous improvement includes the following planned features:
-
-- **User Accounts and Permissions:**
-    - Introduce user accounts with customizable permissions, enhancing security and control over shared files.
-
-- **Real-time Collaboration:**
-    - Enable real-time collaboration on shared documents, fostering teamwork and productivity.
-
-- **Integration with Cloud Services:**
-    - Explore integration options with popular cloud services to broaden the range of storage and sharing capabilities.
-
-- **File Versioning:**
-    - Implement version control for files, allowing users to track changes and revert to previous versions if needed.
-
-- **Automatic File Deletion:**
-    - Files uploaded will be automatically deleted after 24 hours, promoting data privacy and system cleanliness.
-
-- **Code-based File Access:**
-    - Instead of generating links, a unique code will be assigned to each file. Users will need to enter the code to download the file, adding an extra layer of security.
-
-- **UI Enhancements:**
-    - Implement enhancements to the user interface for a more visually appealing and intuitive experience.
 
 ## Conclusion
 
