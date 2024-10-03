@@ -1,56 +1,77 @@
+/* Main container */
 .main {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 40px;
-    text-align: center;
-  }
-  
-  .headings {
-    margin-bottom: 50px;
-  }
-  
-  .headings h2 {
-    font-size: 70px;
-    margin-bottom: 10px;
-  }
-  
-  .headings h3 {
-    font-size: 30px;
-    color: #555;
-  }
-  
-  #uploadBtn {
-    background-color: #4CAF50;
-    width: 200px;
-    color: white;
-    border: none;
-    padding: 15px 30px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 25px;
-    margin-bottom: 30px;
-    cursor: pointer;
-    border-radius: 5px;
-  }
-  
-  .linksection {
-    background-color: #f4f4f4;
-    padding: 30px;
-    border-radius: 8px;
-    cursor: pointer;
-    text-decoration: underline;
-    /* color: blue; */
-  }
-  
-  .linksection p{
-    font-size: 38px;
-    display: block;
-    margin-top: 20px;
-    color: black;
-  }
-  
-  /* Share.css */
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 40px;
+  text-align: center;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+  font-family: 'Roboto', sans-serif;
+}
+
+/* Headings container */
+.headings {
+  margin-bottom: 50px;
+}
+
+.headings h2 {
+  font-size: 58px;
+  margin-bottom: 10px;
+  font-weight: 700;
+  color: #2c3e50;
+}
+
+.headings h3 {
+  font-size: 24px;
+  color: #7f8c8d;
+  font-weight: 400;
+}
+
+/* Upload button */
+#uploadBtn {
+  background-color: #27ae60;
+  width: 240px;
+  color: white;
+  border: none;
+  padding: 16px 32px;
+  font-size: 20px;
+  margin-bottom: 30px;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.2s ease;
+  box-shadow: 0 4px 12px rgba(39, 174, 96, 0.4);
+}
+
+#uploadBtn:hover {
+  background-color: #229954;
+  transform: scale(1.02);
+  box-shadow: 0 6px 18px rgba(39, 174, 96, 0.6);
+}
+
+/* Link section */
+.linksection {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  text-decoration: none;
+  border: 1px solid #bdc3c7;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.linksection:hover {
+  background-color: #ecf0f1;
+  box-shadow: 0 6px 18px rgba(44, 62, 80, 0.1);
+}
+
+.linksection p {
+  font-size: 34px;
+  color: #2c3e50;
+  margin: 0;
+}
+
+/* Dragging styles */
 .main.dragging {
   border: 2px dashed #009688;
   background-color: #f0f0f0;
