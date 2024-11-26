@@ -13,12 +13,14 @@ export const App = () => {
   const [result, setresult] = useState('');
   const fileInput = useRef(null);
   const [isDragging, setIsDragging] = useState(false);
+  const [isLoading , setIsLoading] = useState(false);
 
   // console.log(file);
 
   useEffect(() => {
     const getImg = async () => {
       if (file) {
+        setIsLoading(true);
         //creating new form data
         const data = new FormData();
         data.append("name", file.name);
@@ -29,9 +31,16 @@ export const App = () => {
         to backend server via api 
         hence the uplode file will do that
         */
-        const response = await uplodeFile(data);
-        setresult(response.data.code);
 
+        try {
+          const response = await uplodeFile(data);
+          setresult(response.data.code);
+        } catch (error) {
+          console.error('File upload failed:', error);
+          setresult('Failed to upload file.');
+        } finally {
+          setIsLoading(false);
+        }
       }
     }
     getImg();
@@ -81,7 +90,9 @@ export const App = () => {
         <div className="headings">
           <h2>Share Files</h2>
         </div>
-        <button id='uploadBtn' onClick={() => onUplodeClick()}>Upload</button>
+        <button id='uploadBtn' onClick={() => onUplodeClick()} disabled={isLoading}>
+          {isLoading ? 'Uploding.....' : 'Uplode'}
+        </button>
         <input
           type="file"
           ref={fileInput}
@@ -94,6 +105,13 @@ export const App = () => {
         {isDragging && (
           <div className="drag-drop-hint">
             <p>Drop files here to upload</p>
+          </div>
+        )}
+                {isLoading && (
+          <div className="loading-spinner">
+            {/* Replace this div with your spinner design or animation */}
+            <div className="spinner"></div>
+            <p>Uploading...</p>
           </div>
         )}
       </div>
