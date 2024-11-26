@@ -18,9 +18,6 @@ The primary aim of this application is to provide a user-friendly platform for e
 4. **Responsive Design**
     - A responsive design that adapts to various devices, ensuring a consistent and enjoyable user experience whether on a desktop, tablet, or mobile device.
 
-6. **Robust File Management**
-    - Include features for users to manage their shared files effectively, with options for organizing, deleting, and tracking file activities.
-
 
 
 ## Conclusion
